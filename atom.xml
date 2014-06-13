@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Random Ramblings]]></title>
+  <link href="http://sookoor.github.io/atom.xml" rel="self"/>
+  <link href="http://sookoor.github.io/"/>
+  <updated>2014-06-13T00:38:50-05:00</updated>
+  <id>http://sookoor.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Escape Codes and Format Sequences]]></title>
+    <link href="http://sookoor.github.io/blog/escape-codes-and-format-sequences/"/>
+    <updated>2014-06-12T23:46:03-05:00</updated>
+    <id>http://sookoor.github.io/blog/escape-codes-and-format-sequences</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[This is post]]></title>
+    <link href="http://sookoor.github.io/blog/this-is-a-test/"/>
+    <updated>2011-06-01T14:44:00-05:00</updated>
+    <id>http://sookoor.github.io/blog/this-is-a-test</id>
+    <content type="html"><![CDATA[<p>Booyah!</p>
+]]></content>
+  </entry>
+  
+</feed>
