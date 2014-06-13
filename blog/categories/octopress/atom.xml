@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Random Ramblings]]></title>
+  <link href="http://sookoor.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://sookoor.github.io/"/>
+  <updated>2014-06-13T10:18:53-05:00</updated>
+  <id>http://sookoor.github.io/</id>
+  <author>
+    <name><![CDATA[Tamim Sookoor]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Blogging Workflow]]></title>
+    <link href="http://sookoor.github.io/blog/octopress-blogging-workflow/"/>
+    <updated>2014-06-13T09:57:43-05:00</updated>
+    <id>http://sookoor.github.io/blog/octopress-blogging-workflow</id>
+    <content type="html"><![CDATA[<ol>
+  <li>
+    <p>Create a new post: <code>rake new_post[&lt;Title&gt;]</code></p>
+  </li>
+  <li>
+    <p>Add content by editing <code>source/_posts/&lt;date&gt;-&lt;Title&gt;.markdown</code></p>
+  </li>
+  <li>Preview changes:
+    <ul>
+      <li>If using Pow, run <code>rake generate</code> and open <a href="http://octopress.dev">octopress.dev</a> in a browser</li>
+      <li>Otherwise, run <code>rake preview</code> and open [localhost:4000](localhost:4000] in a browser</li>
+    </ul>
+  </li>
+  <li>Push changes to Github:</li>
+</ol>
+
+<pre><code>$ rake generate
+$ git add .
+$ git commit -am "&lt;Commit message&gt;"
+$ git push origin source
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Creating a Github Blog Using Octopress]]></title>
+    <link href="http://sookoor.github.io/blog/creating-a-github-blog-using-octopress/"/>
+    <updated>2014-06-13T09:16:04-05:00</updated>
+    <id>http://sookoor.github.io/blog/creating-a-github-blog-using-octopress</id>
+    <content type="html"><![CDATA[<ol>
+  <li>
+    <p><a href="http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/">Setup the blog</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Change the theme</a></p>
+  </li>
+  <li>
+    <p><a href="http://samwize.com/2012/09/24/octopress-table-stylesheet/">Make tables work</a></p>
+  </li>
+  <li>
+    <p>If you are on a Mac, setup Powder to preview changes before publishing, by following the instructions in the <em>Preview your content with <a href="https://github.com/Rodreegez/powder">Powder</a></em> section <a href="http://labs.grupow.com/blog/2012/01/30/start-blogging-with-octopress">here</a></p>
+  </li>
+  <li>
+    <p><a href="http://markdowntutorial.com">Learn Markdown basics</a></p>
+  </li>
+</ol>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,148 +1,160 @@
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>printf escape and format codes - Random Ramblings</title>
-  <meta name="author" content="Tamim Sookoor">
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>printf escape and format codes  | Random Ramblings</title>
 
-  
-  <meta name="description" content="The printf command can be called with the following escape and format codes: Escape Code Output \a audible alert (bell) \ \ backslash \b backspace \r &hellip;">
-  
+<meta name="author" content="Tamim Sookoor"> 
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tamim Sookoor's blog."> <meta name="keywords" content="">
 
-  
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link rel="canonical" href="http://sookoor.github.io/blog/escape-codes-and-format-sequences">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Random Ramblings" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href="/atom.xml" rel="alternate" title="Random Ramblings" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.fancybox.pack.js"></script>
 
-  
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
 
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+
+	
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Random Ramblings</a></h1>
-  
-    <h2>Thoughts on Life, the Universe, and Everything</h2>
-  
-</hgroup>
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">Random Ramblings</a></h1>
+<h4>Thoughts on Life, the Universe, and Everything</h4>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="https://www.google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:sookoor.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
 
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  
-  
-</ul>
 
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">printf escape and format codes</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-06-12T23:46:03-05:00" pubdate data-updated="true">Jun 12<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>The printf command can be called with the following escape and format codes:</p>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">printf escape and format codes</h2>
+	<div class="entry-content"><p>The printf command can be called with the following escape and format codes:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Escape Code</th>
-      <th>Output</th>
+      <th style="text-align: left">Escape Code</th>
+      <th style="text-align: left">Output</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>\a</td>
-      <td>audible alert (bell)</td>
+      <td style="text-align: left">\a</td>
+      <td style="text-align: left">audible alert (bell)</td>
     </tr>
     <tr>
-      <td>\ \</td>
-      <td>backslash</td>
+      <td style="text-align: left">\ \</td>
+      <td style="text-align: left">backslash</td>
     </tr>
     <tr>
-      <td>\b</td>
-      <td>backspace</td>
+      <td style="text-align: left">\b</td>
+      <td style="text-align: left">backspace</td>
     </tr>
     <tr>
-      <td>\r</td>
-      <td>carriage return</td>
+      <td style="text-align: left">\r</td>
+      <td style="text-align: left">carriage return</td>
     </tr>
     <tr>
-      <td>\”</td>
-      <td>double quote</td>
+      <td style="text-align: left">\”</td>
+      <td style="text-align: left">double quote</td>
     </tr>
     <tr>
-      <td>\f</td>
-      <td>formfeed</td>
+      <td style="text-align: left">\f</td>
+      <td style="text-align: left">formfeed</td>
     </tr>
     <tr>
-      <td>\t</td>
-      <td>horizontal tab</td>
+      <td style="text-align: left">\t</td>
+      <td style="text-align: left">horizontal tab</td>
     </tr>
     <tr>
-      <td>\n</td>
-      <td>newline</td>
+      <td style="text-align: left">\n</td>
+      <td style="text-align: left">newline</td>
     </tr>
     <tr>
-      <td>\0</td>
-      <td>null character</td>
+      <td style="text-align: left">\0</td>
+      <td style="text-align: left">null character</td>
     </tr>
     <tr>
-      <td>\’</td>
-      <td>single quote</td>
+      <td style="text-align: left">\’</td>
+      <td style="text-align: left">single quote</td>
     </tr>
     <tr>
-      <td>\v</td>
-      <td>vertical tab</td>
+      <td style="text-align: left">\v</td>
+      <td style="text-align: left">vertical tab</td>
     </tr>
     <tr>
-      <td>\?</td>
-      <td>question mark</td>
+      <td style="text-align: left">\?</td>
+      <td style="text-align: left">question mark</td>
     </tr>
   </tbody>
 </table>
@@ -152,68 +164,62 @@
 <table>
   <thead>
     <tr>
-      <th>Format Code</th>
-      <th>Output</th>
+      <th style="text-align: left">Format Code</th>
+      <th style="text-align: left">Output</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>c/%</td>
-      <td>Character</td>
+      <td style="text-align: left">c/%</td>
+      <td style="text-align: left">Character</td>
     </tr>
     <tr>
-      <td>d/i</td>
-      <td>Signed decimal integer</td>
+      <td style="text-align: left">d/i</td>
+      <td style="text-align: left">Signed decimal integer</td>
     </tr>
     <tr>
-      <td>e/E</td>
-      <td>Scientific notation (mantissa/exponent) using e/E character</td>
+      <td style="text-align: left">e/E</td>
+      <td style="text-align: left">Scientific notation (mantissa/exponent) using e/E character</td>
     </tr>
     <tr>
-      <td>f</td>
-      <td>Decimal floating point</td>
+      <td style="text-align: left">f</td>
+      <td style="text-align: left">Decimal floating point</td>
     </tr>
     <tr>
-      <td>g/G</td>
-      <td>Use the shorter of %e/%E or %f</td>
+      <td style="text-align: left">g/G</td>
+      <td style="text-align: left">Use the shorter of %e/%E or %f</td>
     </tr>
     <tr>
-      <td>o</td>
-      <td>Signed octal</td>
+      <td style="text-align: left">o</td>
+      <td style="text-align: left">Signed octal</td>
     </tr>
     <tr>
-      <td>s</td>
-      <td>String of characters</td>
+      <td style="text-align: left">s</td>
+      <td style="text-align: left">String of characters</td>
     </tr>
     <tr>
-      <td>u</td>
-      <td>Unsigned decimal integer</td>
+      <td style="text-align: left">u</td>
+      <td style="text-align: left">Unsigned decimal integer</td>
     </tr>
     <tr>
-      <td>x/(X)</td>
-      <td>Unsigned hexadecimal integer (capital letters)</td>
+      <td style="text-align: left">x/(X)</td>
+      <td style="text-align: left">Unsigned hexadecimal integer (capital letters)</td>
     </tr>
     <tr>
-      <td>p</td>
-      <td>Pointer address</td>
+      <td style="text-align: left">p</td>
+      <td style="text-align: left">Pointer address</td>
     </tr>
     <tr>
-      <td>n</td>
-      <td>Nothing printed</td>
+      <td style="text-align: left">n</td>
+      <td style="text-align: left">Nothing printed</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">Tamim Sookoor</span></span>
-
-      
+<div class="meta">
+	<div class="date">
 
 
 
@@ -225,119 +231,54 @@
   
 
 
-<time datetime="2014-06-12T23:46:03-05:00" pubdate data-updated="true">Jun 12<span>th</span>, 2014</time>
-      
+<time datetime="2014-06-12T23:46:03-05:00" pubdate data-updated="true">Jun 12<span>th</span>, 2014</time></div>
+	
 
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/c/'>c</a>, <a class='category' href='/blog/categories/printf/'>printf</a>
-  
-</span>
+<div class="tags">
 
+	<a class='category' href='/blog/categories/c/'>c</a>, <a class='category' href='/blog/categories/printf/'>printf</a>
 
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://sookoor.github.io/blog/escape-codes-and-format-sequences/" data-via="TSookoor" data-counturl="http://sookoor.github.io/blog/escape-codes-and-format-sequences/" >Tweet</a>
-  
-  
-  
 </div>
 
-    
-    <p class="meta">
-      
-      
-    </p>
-  </footer>
-</article>
 
-  <section>
-    <h1>Comments</h1>
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
     <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  </section>
-
+</section>
 </div>
+	<footer id="footer" class="inner">Copyright &copy; 2014
 
-  <aside class="sidebar">
-   
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:sookoor.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/escape-codes-and-format-sequences/">printf escape and format codes</a>
-      </li>
-    
-  </ul>
-</section>
+    Tamim Sookoor
 
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating...</li>
-  </ul>
-  
-  <a href="https://github.com/sookoor">@sookoor</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'sookoor',
-            count: 14,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-
-<section class="googleplus">
-  <h1>
-    <a href="https://plus.google.com/+TamimSookoor?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
-  
-</aside>
-
-
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Tamim Sookoor -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
+<br>
+Powered by Octopress.
 </footer>
-  
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
 
 <script type="text/javascript">
       var disqus_shortname = 'sookoor';
@@ -357,43 +298,6 @@
 
 
 
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-<script>
-  $(document).ready(function() {  
-  var stickyNavTop = $('nav').offset().top;  
-    
-  var stickyNav = function(){  
-  var scrollTop = $(window).scrollTop();  
-         
-  if (scrollTop > stickyNavTop) {   
-      $('nav').addClass('sticky');  
-  } else {  
-      $('nav').removeClass('sticky');   
-  }  
-  };  
-    
-  stickyNav();  
-    
-  $(window).scroll(function() {  
-      stickyNav();  
-  });  
-  });  
-</script>
 
 
 </body>

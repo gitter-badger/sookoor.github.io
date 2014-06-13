@@ -4,7 +4,7 @@
   <title><![CDATA[Random Ramblings]]></title>
   <link href="http://sookoor.github.io/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-13T09:10:09-05:00</updated>
+  <updated>2014-06-13T10:18:53-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
     <name><![CDATA[Tamim Sookoor]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Blogging Workflow]]></title>
+    <link href="http://sookoor.github.io/blog/octopress-blogging-workflow/"/>
+    <updated>2014-06-13T09:57:43-05:00</updated>
+    <id>http://sookoor.github.io/blog/octopress-blogging-workflow</id>
+    <content type="html"><![CDATA[<ol>
+  <li>
+    <p>Create a new post: <code>rake new_post[&lt;Title&gt;]</code></p>
+  </li>
+  <li>
+    <p>Add content by editing <code>source/_posts/&lt;date&gt;-&lt;Title&gt;.markdown</code></p>
+  </li>
+  <li>Preview changes:
+    <ul>
+      <li>If using Pow, run <code>rake generate</code> and open <a href="http://octopress.dev">octopress.dev</a> in a browser</li>
+      <li>Otherwise, run <code>rake preview</code> and open [localhost:4000](localhost:4000] in a browser</li>
+    </ul>
+  </li>
+  <li>Push changes to Github:</li>
+</ol>
+
+<pre><code>$ rake generate
+$ git add .
+$ git commit -am "&lt;Commit message&gt;"
+$ git push origin source
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Creating a Github Blog Using Octopress]]></title>
+    <link href="http://sookoor.github.io/blog/creating-a-github-blog-using-octopress/"/>
+    <updated>2014-06-13T09:16:04-05:00</updated>
+    <id>http://sookoor.github.io/blog/creating-a-github-blog-using-octopress</id>
+    <content type="html"><![CDATA[<ol>
+  <li>
+    <p><a href="http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/">Setup the blog</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Change the theme</a></p>
+  </li>
+  <li>
+    <p><a href="http://samwize.com/2012/09/24/octopress-table-stylesheet/">Make tables work</a></p>
+  </li>
+  <li>
+    <p>If you are on a Mac, setup Powder to preview changes before publishing, by following the instructions in the <em>Preview your content with <a href="https://github.com/Rodreegez/powder">Powder</a></em> section <a href="http://labs.grupow.com/blog/2012/01/30/start-blogging-with-octopress">here</a></p>
+  </li>
+  <li>
+    <p><a href="http://markdowntutorial.com">Learn Markdown basics</a></p>
+  </li>
+</ol>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[printf escape and format codes]]></title>
@@ -23,58 +77,58 @@
 <table>
   <thead>
     <tr>
-      <th>Escape Code</th>
-      <th>Output</th>
+      <th style="text-align: left">Escape Code</th>
+      <th style="text-align: left">Output</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>\a</td>
-      <td>audible alert (bell)</td>
+      <td style="text-align: left">\a</td>
+      <td style="text-align: left">audible alert (bell)</td>
     </tr>
     <tr>
-      <td>\ \</td>
-      <td>backslash</td>
+      <td style="text-align: left">\ \</td>
+      <td style="text-align: left">backslash</td>
     </tr>
     <tr>
-      <td>\b</td>
-      <td>backspace</td>
+      <td style="text-align: left">\b</td>
+      <td style="text-align: left">backspace</td>
     </tr>
     <tr>
-      <td>\r</td>
-      <td>carriage return</td>
+      <td style="text-align: left">\r</td>
+      <td style="text-align: left">carriage return</td>
     </tr>
     <tr>
-      <td>\”</td>
-      <td>double quote</td>
+      <td style="text-align: left">\”</td>
+      <td style="text-align: left">double quote</td>
     </tr>
     <tr>
-      <td>\f</td>
-      <td>formfeed</td>
+      <td style="text-align: left">\f</td>
+      <td style="text-align: left">formfeed</td>
     </tr>
     <tr>
-      <td>\t</td>
-      <td>horizontal tab</td>
+      <td style="text-align: left">\t</td>
+      <td style="text-align: left">horizontal tab</td>
     </tr>
     <tr>
-      <td>\n</td>
-      <td>newline</td>
+      <td style="text-align: left">\n</td>
+      <td style="text-align: left">newline</td>
     </tr>
     <tr>
-      <td>\0</td>
-      <td>null character</td>
+      <td style="text-align: left">\0</td>
+      <td style="text-align: left">null character</td>
     </tr>
     <tr>
-      <td>\’</td>
-      <td>single quote</td>
+      <td style="text-align: left">\’</td>
+      <td style="text-align: left">single quote</td>
     </tr>
     <tr>
-      <td>\v</td>
-      <td>vertical tab</td>
+      <td style="text-align: left">\v</td>
+      <td style="text-align: left">vertical tab</td>
     </tr>
     <tr>
-      <td>\?</td>
-      <td>question mark</td>
+      <td style="text-align: left">\?</td>
+      <td style="text-align: left">question mark</td>
     </tr>
   </tbody>
 </table>
@@ -84,54 +138,54 @@
 <table>
   <thead>
     <tr>
-      <th>Format Code</th>
-      <th>Output</th>
+      <th style="text-align: left">Format Code</th>
+      <th style="text-align: left">Output</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>c/%</td>
-      <td>Character</td>
+      <td style="text-align: left">c/%</td>
+      <td style="text-align: left">Character</td>
     </tr>
     <tr>
-      <td>d/i</td>
-      <td>Signed decimal integer</td>
+      <td style="text-align: left">d/i</td>
+      <td style="text-align: left">Signed decimal integer</td>
     </tr>
     <tr>
-      <td>e/E</td>
-      <td>Scientific notation (mantissa/exponent) using e/E character</td>
+      <td style="text-align: left">e/E</td>
+      <td style="text-align: left">Scientific notation (mantissa/exponent) using e/E character</td>
     </tr>
     <tr>
-      <td>f</td>
-      <td>Decimal floating point</td>
+      <td style="text-align: left">f</td>
+      <td style="text-align: left">Decimal floating point</td>
     </tr>
     <tr>
-      <td>g/G</td>
-      <td>Use the shorter of %e/%E or %f</td>
+      <td style="text-align: left">g/G</td>
+      <td style="text-align: left">Use the shorter of %e/%E or %f</td>
     </tr>
     <tr>
-      <td>o</td>
-      <td>Signed octal</td>
+      <td style="text-align: left">o</td>
+      <td style="text-align: left">Signed octal</td>
     </tr>
     <tr>
-      <td>s</td>
-      <td>String of characters</td>
+      <td style="text-align: left">s</td>
+      <td style="text-align: left">String of characters</td>
     </tr>
     <tr>
-      <td>u</td>
-      <td>Unsigned decimal integer</td>
+      <td style="text-align: left">u</td>
+      <td style="text-align: left">Unsigned decimal integer</td>
     </tr>
     <tr>
-      <td>x/(X)</td>
-      <td>Unsigned hexadecimal integer (capital letters)</td>
+      <td style="text-align: left">x/(X)</td>
+      <td style="text-align: left">Unsigned hexadecimal integer (capital letters)</td>
     </tr>
     <tr>
-      <td>p</td>
-      <td>Pointer address</td>
+      <td style="text-align: left">p</td>
+      <td style="text-align: left">Pointer address</td>
     </tr>
     <tr>
-      <td>n</td>
-      <td>Nothing printed</td>
+      <td style="text-align: left">n</td>
+      <td style="text-align: left">Nothing printed</td>
     </tr>
   </tbody>
 </table>
