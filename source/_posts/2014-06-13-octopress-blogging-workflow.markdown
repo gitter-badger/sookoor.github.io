@@ -12,7 +12,7 @@ categories: [blog, octopress]
 
 3. Preview changes:
  * If using [Pow](http://pow.cx), run ```rake generate``` and open [octopress.dev](http://octopress.dev) in a browser
- * Otherwise, run ```rake preview``` and open [localhost:4000](localhost:4000) in a browser
+ * Otherwise, run ```rake preview``` and open [localhost:4000](http://localhost:4000) in a browser
 
 4. Publish post and push changes to Github:      
 
