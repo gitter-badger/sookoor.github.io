@@ -4,21 +4,72 @@
   <title><![CDATA[Category: c | Random Ramblings]]></title>
   <link href="http://sookoor.github.io/blog/categories/c/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-13T06:29:10-05:00</updated>
+  <updated>2014-06-13T07:07:28-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Tamim Sookoor]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[Escape Codes and Format Sequences]]></title>
+    <title type="html"><![CDATA[Escape and Format Sequences]]></title>
     <link href="http://sookoor.github.io/blog/escape-codes-and-format-sequences/"/>
     <updated>2014-06-12T23:46:03-05:00</updated>
     <id>http://sookoor.github.io/blog/escape-codes-and-format-sequences</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
 ]]></content>
   </entry>
   
