@@ -4,7 +4,7 @@
   <title><![CDATA[Random Ramblings]]></title>
   <link href="http://sookoor.github.io/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-13T11:19:14-05:00</updated>
+  <updated>2014-06-13T11:22:55-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
     <name><![CDATA[Tamim Sookoor]]></name>
@@ -28,7 +28,7 @@
   <li>Preview changes:
     <ul>
       <li>If using <a href="http://pow.cx">Pow</a>, run <code>rake generate</code> and open <a href="http://octopress.dev">octopress.dev</a> in a browser</li>
-      <li>Otherwise, run <code>rake preview</code> and open [localhost:4000](localhost:4000] in a browser</li>
+      <li>Otherwise, run <code>rake preview</code> and open <a href="localhost:4000">localhost:4000</a> in a browser</li>
     </ul>
   </li>
   <li>
