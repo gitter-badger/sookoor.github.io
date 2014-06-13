@@ -9,7 +9,7 @@ categories: [c, printf]
 The printf command can be called with the following escape and format codes:
 
 | Escape Code | Output 
-|-|-
+|:-|:-
 | \a | audible alert (bell)
 | \\ \\ | backslash
 | \b | backspace
@@ -26,7 +26,7 @@ The printf command can be called with the following escape and format codes:
 <br />
 
 | Format Code | Output
-|-|-
+|:-|:-
 | c/% | Character
 | d/i | Signed decimal integer
 | e/E | Scientific notation (mantissa/exponent) using e/E character
