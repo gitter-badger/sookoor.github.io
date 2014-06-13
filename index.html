@@ -109,25 +109,29 @@ $(document).ready(
 	<div class="entry-content">
 		<ol>
   <li>
-    <p>Create a new post: <code>rake new_post[&lt;Title&gt;]</code></p>
+    <p>Create a new post: <code>rake new_post[&lt;Title&gt;]</code>  </p>
   </li>
   <li>
     <p>Add content by editing <code>source/_posts/&lt;date&gt;-&lt;Title&gt;.markdown</code></p>
   </li>
   <li>Preview changes:
     <ul>
-      <li>If using Pow, run <code>rake generate</code> and open <a href="http://octopress.dev">octopress.dev</a> in a browser</li>
+      <li>If using <a href="http://pow.cx">Pow</a>, run <code>rake generate</code> and open <a href="http://octopress.dev">octopress.dev</a> in a browser</li>
       <li>Otherwise, run <code>rake preview</code> and open [localhost:4000](localhost:4000] in a browser</li>
     </ul>
   </li>
-  <li>Push changes to Github:</li>
-</ol>
+  <li>
+    <p>Push changes to Github:      </p>
 
-<pre><code>$ rake generate
-$ git add .
-$ git commit -am "&lt;Commit message&gt;"
-$ git push origin source
+    <pre><code> rake generate
+ git add .
+ git commit -am "&lt;commit message&gt;"
+ git push origin source
 </code></pre>
+  </li>
+  <li>Publish post: <code>rake deploy</code>   <br />
+<b /></li>
+</ol>
 
 		
 		
