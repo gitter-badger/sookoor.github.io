@@ -9,12 +9,12 @@
   <meta name="description" content="Random Ramblings">
 
   
-    <title>Your Name</title>
+    <title>Category: awesome-sauce - Your Name</title>
   
 
 
   
-  <meta name="description" content="Search Results $('#search_results').tapir({ 'token': '', 'complete' : function() { document.getElementById('search_loading').style.display="none &hellip;">
+  <meta name="description" content="Category: awesome-sauce">
   
 
 
@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://sookoor.github.io/search.html">
+  <link rel="canonical" href="http://sookoor.github.ioblog/categories/awesome-sauce">
   <link href="/favicon.ico" rel="icon">
   <script type="text/javascript" src="http://use.typekit.com/zcp2xbp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
@@ -46,10 +46,10 @@
 
 <body   >
 
-	<div class="container">
+  <div class="container">
 
-		<div class="four columns">
-  			<nav role="navigation"><ul class="title">
+    <div class="four columns">
+        <nav role="navigation"><ul class="title">
   <li><a href="/">Ryan Deussing</a></li>
 </ul>
   
@@ -152,43 +152,46 @@
               <a target="_blank" href="http://joesgoals.com"><div id="goals"></div></a>  
           </section>
 
-
         </aside>    
-  	</div>
-    
-    
+    </div>
 
-    <header class="twelve columns" role="banner">
-    
-<hgroup>
-  <h1>Random Ramblings</h1>
-</hgroup>
+    <div id="main" class="twelve columns">
+      <div id="content">
+        <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Category: awesome-sauce</h1>
+  </header>
+  
+  <div id="blog-archives" class="category">
 
-    </header>
+<article>
+  
 
-    
 
-  	<div id="main" class="twelve columns">
-	    <div id="content">
-	      <h1 class="entry-title"><center>Search Results</center></h1>
-<div id="search_loading" style="margin: 40px 0">
-    <center><img src="/images/loading.gif"></center>
+  <time datetime="2011-06-01T14:44:00-05:00" pubdate><span class='month'>Jun</span> <span class='day'>01</span> <span class='year'>2011</span></time>
+&nbsp;
+  <h1><a href="/blog/this-is-a-test/">This is post</a></h1>
+
+
+</article>
+
 </div>
 
-<script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
-<div id="search_results" style="display:none">
-<br>
+</article>
+
 </div>
+
 <script>
-         $('#search_results').tapir({
-             'token': '',
-             'complete' : function() { document.getElementById('search_loading').style.display="none"; }
-         });
+  jQuery.noConflict()('li.other').hover (
+    function () {
+    jQuery.noConflict()(this).toggleClass("current-menu-item")
+  });
 </script>
 
-
-	    </div>
-  	</div>
+      </div>
+    </div>
   
   <footer role="contentinfo"  class="sixteen columns"><center>
 <p class="credit">
@@ -198,19 +201,6 @@
 </footer>
   
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'sookoor';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 
@@ -234,9 +224,9 @@
 
 
 <script>
-  jQuery.noConflict()('li.other').hover (
+  $('li.other').hover (
     function () {
-    jQuery.noConflict()(this).toggleClass("current-menu-item")
+    $(this).toggleClass("current-menu-item")
   });
 </script>
 
@@ -244,4 +234,4 @@
 </html>
 
 
-	</div> <!-- container -->
+  </div> <!-- container -->
