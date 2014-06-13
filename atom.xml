@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://sookoor.github.io/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-12T23:45:08-05:00</updated>
+  <updated>2014-06-12T23:46:09-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Escape Codes and Format Sequences]]></title>
+    <link href="http://sookoor.github.io/blog/2014/06/12/escape-codes-and-format-sequences/"/>
+    <updated>2014-06-12T23:46:03-05:00</updated>
+    <id>http://sookoor.github.io/blog/2014/06/12/escape-codes-and-format-sequences</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
