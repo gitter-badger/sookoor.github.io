@@ -9,7 +9,7 @@
   <meta name="author" content="Tamim Sookoor">
 
   
-  <meta name="description" content="Col1 Col2 Col3 Cell1 Cell2 Cell3 Header1 Header2 Header3 cell1 cell2 cell3 cell4 cell5 cell6 cell1 cell2 cell3 cell4 cell5 cell6 Foot1 Foot2 Foot3 &hellip;">
+  <meta name="description" content="The printf command can be called with the following escape and format codes: Escape Code Output \a audible alert (bell) \ \ backslash \b backspace \r &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,6 +18,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
+
+  <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link rel="canonical" href="http://sookoor.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -64,7 +66,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/escape-codes-and-format-sequences/">Escape and Format Sequences</a></h1>
+      <h1 class="entry-title"><a href="/blog/escape-codes-and-format-sequences/">printf escape and format codes</a></h1>
     
     
       <p class="meta">
@@ -87,137 +89,123 @@
   </header>
 
 
-  <div class="entry-content"><table>
- <thead>
-  <tr>
-    <th align="left">Col1</th>
-    <th align="center">Col2</th>
-    <th align="right">Col3</th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-    <td align="left">Cell1</td>
-    <td align="center">Cell2</td>
-    <td align="right">Cell3</td>
-  </tr>
- </tbody>
-</table>
-
-<table rules="groups">
-  <thead>
-    <tr>
-      <th style="text-align: left">Header1</th>
-      <th style="text-align: center">Header2</th>
-      <th style="text-align: right">Header3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">cell1</td>
-      <td style="text-align: center">cell2</td>
-      <td style="text-align: right">cell3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">cell4</td>
-      <td style="text-align: center">cell5</td>
-      <td style="text-align: right">cell6</td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <td style="text-align: left">cell1</td>
-      <td style="text-align: center">cell2</td>
-      <td style="text-align: right">cell3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">cell4</td>
-      <td style="text-align: center">cell5</td>
-      <td style="text-align: right">cell6</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td style="text-align: left">Foot1</td>
-      <td style="text-align: center">Foot2</td>
-      <td style="text-align: right">Foot3</td>
-    </tr>
-  </tfoot>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Header 1</td>
-      <td>Header 2</td>
-      <td>Header 3</td>
-    </tr>
-    <tr>
-      <td>Row 1 column 1</td>
-      <td>Row 1 column 2</td>
-      <td>Row 1 column 3</td>
-    </tr>
-    <tr>
-      <td>Row 2 column 1</td>
-      <td>Row 2 column 2</td>
-      <td>Row 3 column 3</td>
-    </tr>
-  </tbody>
-</table>
+  <div class="entry-content"><p>The printf command can be called with the following escape and format codes:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
+      <th>Escape Code</th>
+      <th>Output</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
+      <td>\a</td>
+      <td>audible alert (bell)</td>
     </tr>
     <tr>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
+      <td>\ \</td>
+      <td>backslash</td>
     </tr>
     <tr>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
+      <td>\b</td>
+      <td>backspace</td>
+    </tr>
+    <tr>
+      <td>\r</td>
+      <td>carriage return</td>
+    </tr>
+    <tr>
+      <td>\”</td>
+      <td>double quote</td>
+    </tr>
+    <tr>
+      <td>\f</td>
+      <td>formfeed</td>
+    </tr>
+    <tr>
+      <td>\t</td>
+      <td>horizontal tab</td>
+    </tr>
+    <tr>
+      <td>\n</td>
+      <td>newline</td>
+    </tr>
+    <tr>
+      <td>\0</td>
+      <td>null character</td>
+    </tr>
+    <tr>
+      <td>\’</td>
+      <td>single quote</td>
+    </tr>
+    <tr>
+      <td>\v</td>
+      <td>vertical tab</td>
+    </tr>
+    <tr>
+      <td>\?</td>
+      <td>question mark</td>
     </tr>
   </tbody>
-  <tbody>
-    <tr>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tfoot>
 </table>
 
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format Code</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>c/%</td>
+      <td>Character</td>
+    </tr>
+    <tr>
+      <td>d/i</td>
+      <td>Signed decimal integer</td>
+    </tr>
+    <tr>
+      <td>e/E</td>
+      <td>Scientific notation (mantissa/exponent) using e/E character</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>Decimal floating point</td>
+    </tr>
+    <tr>
+      <td>g/G</td>
+      <td>Use the shorter of %e/%E or %f</td>
+    </tr>
+    <tr>
+      <td>o</td>
+      <td>Signed octal</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>String of characters</td>
+    </tr>
+    <tr>
+      <td>u</td>
+      <td>Unsigned decimal integer</td>
+    </tr>
+    <tr>
+      <td>x/(X)</td>
+      <td>Unsigned hexadecimal integer (capital letters)</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>Pointer address</td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>Nothing printed</td>
+    </tr>
+  </tbody>
+</table>
 </div>
   
   
@@ -246,7 +234,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/escape-codes-and-format-sequences/">Escape and Format Sequences</a>
+        <a href="/blog/escape-codes-and-format-sequences/">printf escape and format codes</a>
       </li>
     
   </ul>
