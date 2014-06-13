@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Random Ramblings]]></title>
   <link href="http://sookoor.github.io/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-12T23:46:09-05:00</updated>
+  <updated>2014-06-12T23:54:13-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Escape Codes and Format Sequences]]></title>
-    <link href="http://sookoor.github.io/blog/2014/06/12/escape-codes-and-format-sequences/"/>
+    <link href="http://sookoor.github.io/blog/escape-codes-and-format-sequences/"/>
     <updated>2014-06-12T23:46:03-05:00</updated>
-    <id>http://sookoor.github.io/blog/2014/06/12/escape-codes-and-format-sequences</id>
+    <id>http://sookoor.github.io/blog/escape-codes-and-format-sequences</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
