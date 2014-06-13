@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /error/
+
+Sitemap: http://sookoor.github.io/sitemap.xml
