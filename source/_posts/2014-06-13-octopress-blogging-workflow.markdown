@@ -6,21 +6,18 @@ comments: true
 categories: [blog, octopress] 
 ---
 
-1. Create a new post: ```rake new_post[<Title>]```
+1. Create a new post: ```rake new_post[<Title>]```  
 
 2. Add content by editing ```source/_posts/<date>-<Title>.markdown```
 
 3. Preview changes:
- * If using Pow, run ```rake generate``` and open [octopress.dev](http://octopress.dev) in a browser
+ * If using [Pow](http://pow.cx), run ```rake generate``` and open [octopress.dev](http://octopress.dev) in a browser
  * Otherwise, run ```rake preview``` and open [localhost:4000](localhost:4000] in a browser
 
-4. Push changes to Github:
+4. Publish post and push changes to Github:      
 
-~~~
- rake generate
- git add .
- git commit -am "<Commit message>"
- git push origin source
-~~~
-
-5. Publish post: ```rake deploy```
+        rake generate
+        rake deploy
+        git add .
+        git commit -am "<commit message>"
+        git push origin source
