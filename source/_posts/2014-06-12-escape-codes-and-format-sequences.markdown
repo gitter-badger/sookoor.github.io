@@ -27,7 +27,7 @@ The printf command can be called with the following escape and format codes:
 
 | Format Code | Output
 |:-|:-
-| c/% | Character
+| c | Character
 | d/i | Signed decimal integer
 | e/E | Scientific notation (mantissa/exponent) using e/E character
 | f | Decimal floating point
