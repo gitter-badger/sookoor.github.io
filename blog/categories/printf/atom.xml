@@ -4,7 +4,7 @@
   <title><![CDATA[Category: printf | Random Ramblings]]></title>
   <link href="http://sookoor.github.io/blog/categories/printf/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-15T09:24:52-05:00</updated>
+  <updated>2014-06-15T18:58:54-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
     <name><![CDATA[Tamim Sookoor]]></name>
@@ -90,7 +90,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">c/%</td>
+      <td style="text-align: left">c</td>
       <td style="text-align: left">Character</td>
     </tr>
     <tr>
