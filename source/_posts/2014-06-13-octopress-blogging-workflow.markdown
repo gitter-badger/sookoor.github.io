@@ -19,5 +19,5 @@ categories: [blog, octopress]
         rake generate
         rake deploy
         git add .
-        git commit -am "<commit message>"
+        git commit -m "<commit message>"
         git push origin source
