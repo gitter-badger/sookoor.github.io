@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | Random Ramblings]]></title>
   <link href="http://sookoor.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-15T08:49:55-05:00</updated>
+  <updated>2014-06-15T09:24:52-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
     <name><![CDATA[Tamim Sookoor]]></name>
@@ -37,7 +37,7 @@
     <pre><code> rake generate
  rake deploy
  git add .
- git commit -am "&lt;commit message&gt;"
+ git commit -m "&lt;commit message&gt;"
  git push origin source
 </code></pre>
   </li>
