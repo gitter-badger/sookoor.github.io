@@ -4,7 +4,7 @@
   <title><![CDATA[Random Ramblings]]></title>
   <link href="http://sookoor.github.io/atom.xml" rel="self"/>
   <link href="http://sookoor.github.io/"/>
-  <updated>2014-06-15T08:41:39-05:00</updated>
+  <updated>2014-06-15T08:49:55-05:00</updated>
   <id>http://sookoor.github.io/</id>
   <author>
     <name><![CDATA[Tamim Sookoor]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Your branch is based on 'origin/master']]></title>
+    <link href="http://sookoor.github.io/blog/your-branch-is-based-on-origin-slash-master/"/>
+    <updated>2014-06-15T08:47:44-05:00</updated>
+    <id>http://sookoor.github.io/blog/your-branch-is-based-on-origin-slash-master</id>
+    <content type="html"><![CDATA[<p>When running <code>git source</code> you might see the error message that is the title of this post, particularly for an Octopress site. Follow <a href="http://pastebin.com/aSYe69tK">these</a> instructions to fix this.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[C Boolean Operators]]></title>
