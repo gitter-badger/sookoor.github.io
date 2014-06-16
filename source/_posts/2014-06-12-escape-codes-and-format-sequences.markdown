@@ -27,14 +27,16 @@ The printf command can be called with the following escape and format codes:
 
 | Format Code | Output
 |:-|:-
-| c | Character
 | d/i | Signed decimal integer
-| e/E | Scientific notation (mantissa/exponent) using e/E character
+| o | Signed octal
+| x/(X) | Unsigned hexadecimal integer (capital letters)
+| ld | long decimal ['l' can also be applied to any of the above to change the type to 'long']
+| u | Unsigned decimal integer
+| lu | unsigned long decimal 
+| c | Character
+| s | String of characters
 | f | Decimal floating point
 | g/G | Use the shorter of %e/%E or %f
-| o | Signed octal
-| s | String of characters
-| u | Unsigned decimal integer
-| x/(X) | Unsigned hexadecimal integer (capital letters)
+| e/E | Scientific notation (mantissa/exponent) using e/E character
 | p | Pointer address
 | n | Nothing printed 
